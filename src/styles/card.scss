@@ -1,0 +1,100 @@
+$color1: #0052f0;
+$color2: #86afff;
+$color3: #f8f8f8;
+.card {
+  width: 320px;
+  height: 400px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+  color: #1f1f1f;
+  margin: 15px;
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(0, 0, 0, 0.377) 0px 16px 48px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+}
+.card-top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 20px 20px 0 0;
+  background-color: #f8f8f8;
+  width: 320px;
+  height: 179px;
+  overflow: hidden;
+  border-bottom: solid 1px $color2;
+
+  img {
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .counter {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 0px 0px 0 20px;
+    background-color: $color1;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.card-bottom {
+  position: absolute;
+  top: 180px;
+  left: 0px;
+  border-radius: 0 0 20px 20px;
+  background-color: #fafafa;
+  width: 320px;
+  height: 220px;
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 300px;
+    height: auto;
+    margin: 0;
+    padding: 5px 10px;
+  }
+  .all_lang {
+    width: 300px;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    div {
+      width: auto;
+      padding: 5px 15px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+      background-color: #d2e1ff;
+      border-radius: 500px;
+      margin: 3px 6px;
+    }
+  }
+  .prj_desc {
+    position: absolute;
+    text-align: left;
+    bottom: 15px;
+    left: 0px;
+    height: auto;
+    width: 290px;
+    padding: 5px 15px;
+    font-size: 18px;
+  }
+}

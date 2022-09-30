@@ -1,0 +1,33 @@
+$color1: #0052f0;
+$color2: #528dff;
+$color3: #f8f8f8;
+.projects {
+  padding-top: 100px;
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  text-align: center;
+}
+.heading {
+  font-size: 72px;
+  text-align: center;
+  color: $color1;
+  line-height: 72px;
+  margin: 0;
+}
+.all_projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 640px) {
+  .projects {
+    padding-top: 60px;
+    min-height: calc(100vh - 60px);
+  }
+  .heading {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
